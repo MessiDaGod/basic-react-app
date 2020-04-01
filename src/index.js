@@ -1,19 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-const hello = "Hello yeeeeeeeeeeeeee."
-
-function App() {
-  return (
-    <div>
-      <p>{hello}</p>
-    </div>
-  );
-}
+import Login from "./components/Login";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Login />
   </React.StrictMode>,
   document.getElementById('root')
 );
