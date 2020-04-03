@@ -10,6 +10,30 @@ const styles = theme => ({
     },
 });
 
+class UsernameInput extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            username: '',
+        };
+    }
+    render() {
+        const { classes } = this.props;
+        return (
+            <TextField />
+        );
+    }
+}
+
+UsernameInput.propTypes = {
+    classes: PropTypes.object.isRequired,
+    onChange: PropTypes.func.isRequired,
+    value: PropTypes.func.isRequired,
+};
+
+UsernameInput = withStyles(styles)(UsernameInput);
+
 class PasswordInput extends Component {
     constructor(props) {
         super(props);
@@ -64,6 +88,7 @@ class PasswordInput2 extends Component {
 
         this.state = {
             password: '',
+            username: '',
         };
     }
 
@@ -75,17 +100,27 @@ class PasswordInput2 extends Component {
 
     render() {
         const { password } = this.state;
+        const { username } = this.state;        
 
         return (
-            <PasswordInput
-                label="Password"
-                name="password"
-                value={password}
-                onChange={this.onChange}
-            />
+            <React.Fragment>
+                <UsernameInput
+                    placeholder="UserName"
+                    name="username"
+                    className=""
+                    value={username}
+                    onChange={this.onChange}
+                />
+                <PasswordInput
+                    placeholder="Password"
+                    name="password"
+                    className=""
+                    value={password}
+                    onChange={this.onChange}
+                />
+            </React.Fragment>
         );
     }
 }
-
 
 export default PasswordInput2;

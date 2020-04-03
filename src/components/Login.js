@@ -21,9 +21,6 @@ class Login extends Component {
                                         <ul className="divcenter" id="tblLogin1" runat="server">
                                         </ul>
                                         <ul className="divcenter" id="tblLogin" runat="server">
-                                            <li>
-                                                <input type="text" id="Username" name="Username" placeholder="UserName" />
-                                            </li>
                                             <PasswordInput2 />
                                             <li><span className="arrow">&nbsp;</span>
                                                 <input type="submit" id="cmdLogin" name="cmdLogin" className="loginformbutton" value="LOGIN" />
