@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import "./Login.css";
 
-export default class Login extends Component {
+import PasswordInput2 from "./PasswordInput2";
+
+class Login extends Component {
 
     render() {
         return (
@@ -22,19 +24,9 @@ export default class Login extends Component {
                                             <li>
                                                 <input type="text" id="Username" name="Username" placeholder="UserName" />
                                             </li>
-                                            <li>
-                                                <input type="text" id="Password_Text" placeholder="Password" />
-                                                <input type="password" id="Password" name="Password" style={{ display: "none" }} />
-                                            </li>
-                                            <li>
-                                                <input type="text" id="Server" name="Server" placeholder="Server" />
-                                            </li>
-                                            <li>
-                                                <input type="text" id="Database" name="Database" placeholder="Database Name" />
-                                            </li>
+                                            <PasswordInput2 />
                                             <li><span className="arrow">&nbsp;</span>
-                                                <input type="submit" id="cmdLogin" name="cmdLogin" className="loginformbutton" value="LOGIN"
-                                                    runat="server" />
+                                                <input type="submit" id="cmdLogin" name="cmdLogin" className="loginformbutton" value="LOGIN" />
                                             </li>
                                         </ul>
                                     </div>
@@ -47,3 +39,5 @@ export default class Login extends Component {
         );
     }
 }
+
+export default Login;
