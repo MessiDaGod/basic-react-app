@@ -19,7 +19,7 @@ class UsernameInput extends Component {
         };
     }
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
         return (
             <TextField
                 {...this.props} //this allows for the placeholder
