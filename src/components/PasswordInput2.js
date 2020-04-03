@@ -21,7 +21,9 @@ class UsernameInput extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <TextField />
+            <TextField
+                {...this.props} //this allows for the placeholder
+            />
         );
     }
 }
@@ -100,7 +102,7 @@ class PasswordInput2 extends Component {
 
     render() {
         const { password } = this.state;
-        const { username } = this.state;        
+        const { username } = this.state;
 
         return (
             <React.Fragment>
