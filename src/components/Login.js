@@ -13,9 +13,10 @@ class Login extends Component {
                         <div id="logincontainer columnwidth46">
                             <div id="ctmcontentcontainer">
                                 <PasswordInput2 />
-                                <li>
+                                <button>Submit</button>
+                                {/* <li>
                                     <input type="submit" name="login" value="Login" />
-                                </li>
+                                </li> */}
                             </div>
                         </div>
                     </div>
