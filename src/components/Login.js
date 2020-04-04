@@ -7,27 +7,15 @@ class Login extends Component {
 
     render() {
         return (
-            <form id="Form1" method="post" runat="server">
+            <form id="Form1" method="post">
                 <div id="wrapper">
-                    <div className="bgimg">
-                        <div id="innerwrapper">
-                            <div id="logincontainer" className="directional">
-                                <div className="container_lft">
-                                </div>
-                                <div className="columnwidth46">
-                                    <div className="client-logo">
-                                    </div>
-                                    <div id="ctmcontentcontainer">
-                                        <ul className="divcenter" id="tblLogin1" runat="server">
-                                        </ul>
-                                        <ul className="divcenter" id="tblLogin" runat="server">
-                                            <PasswordInput2 />
-                                            <li><span className="arrow">&nbsp;</span>
-                                                <input type="submit" id="cmdLogin" name="cmdLogin" className="loginformbutton" value="LOGIN" />
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                    <div id="innerwrapper">
+                        <div id="logincontainer columnwidth46">
+                            <div id="ctmcontentcontainer">
+                                <PasswordInput2 />
+                                <li>
+                                    <input type="submit" name="login" value="Login" />
+                                </li>
                             </div>
                         </div>
                     </div>
